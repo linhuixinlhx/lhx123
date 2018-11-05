@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+        
+    }
+    li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    
+    img{
+        border:0;
+    }
+
+    #nav{
+        width: 512px;
+        height: 30px;
+      
+    }
+ #nav .main-menu{
+    width: 100px;
+        height: 30px;
+        background: #ff0000;
+        float:left;
+        margin-right:3px;
+ }
+ #nav .last{
+     margin-right:0;
+ }
+#nav a{
+    color:#fff;
+    text-align: center;
+    line-height: 30px;
+    width:100%;
+    height:100%;
+    display: block;    /*a是行级元素得先让他变成块级元素才能设置宽和高*/
+}
+#nav a:hover{
+    background:orange;
+}
+#nav .submenu{
+    display: none;
+}
+
+#nav .main-menu:hover .submenu{
+    display: block;
+}
+#nav .submenu li:hover{
+    background: #ffff00;
+}
+#nav .submenu li{
+    text-align: center;
+    cursor:pointer;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <ul id="nav">
+        <li class="main-menu">
+           <a href="">菜单1</a> 
+        </li>
+        <li class="main-menu">
+            <a href="">菜单2</a>
+        </li>
+        <li class="main-menu">
+            <a href="">菜单3</a>
+            <ul class="submenu">
+                <li>子菜单1</li>
+                <li>子菜单2</li>
+                <li>子菜单3</li>
+            </ul>
+        </li>
+        <li class="main-menu">
+            <a href="">菜单4</a>
+        </li>
+        <li class=" last main-menu">
+            <a href="">菜单5</a>
+        </li>
+    </ul>
+    
+</body>
+</html>
+
+
+<!-- 可以把子菜单设成一个class因为他们有相同的样式，如果有特殊需要加的在class里面
+改一下名字即可，然后选中的时候注意权重值 -->
