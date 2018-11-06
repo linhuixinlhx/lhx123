@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    .elem{
+        width: 200px;
+        height: 200px;
+        border:1px solid #f00;
+        float: left;
+        position: relative;
+    }
+    .elem:hover{
+        border-color :#00ff00;
+        z-index:1;
+    }
+    .elem2{
+        left:-1px;
+    }
+    .elem3{
+        clear:both;
+        top:-1px;
+    }
+    .elem4{
+        left:-1px;
+        top:-1px;
+    }
+    </style>
+</head>
+<body>
+    <div class="elem elem1"></div>
+    <div class="elem elem2"></div>
+    <div class="elem elem3"></div>
+    <div class="elem elem4"></div>
+</body>
+</html>
+
+<!-- 
+需要注意的是：
+            1.  z-index：1表示元素的堆叠顺序为1时是显示靠近用户的这边
+                     而为-1时为远离用户的一边
+            2.clear:box表示清除浮动（左右两侧都不允许有浮动的元素） -->
