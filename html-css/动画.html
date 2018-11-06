@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    #div1{
+        width: 200px;
+        height: 200px;
+        background: #000000;
+        margin:100px auto;
+    }
+    #div2{
+        width: 200px;
+        height: 200px;
+        background: #ff0000;
+        transition: all  6s  linear ;
+    }
+    #div2:hover{
+        width: 400px;
+        transform: rotate(-60deg);
+    }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <div id="div2"></div>
+    </div>
+</body>
+</html>
+
+<!-- 
+    有兼容性
+1. 变形：
+        -webkit-transform：rotate(30deg);
+       -o- transform：rotate(30deg);
+        -moz-transform：rotate(30deg);
+        -ms-transform：rotate(30deg);
+        transform：rotate(30deg);
+2.变形原点：
+        -webkit-transform-origin:100px 0;
+        -o-transform-origin:100px 0;
+        -moz-transform-origin:100px 0;
+        -ms-transform-origin:100px 0;
+          transform-origin:100px 0;
+3.过度：
+        -webkit-transition：transform  1s linear;
+       -o- transition：transform  1s linear;
+        -ms-transition：transform  1s linear;
+        -moz-transition：transform  1s linear;
+        transition：transform  1s linear; -->
