@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+    }
+    #left{
+        width: 200px;
+        height: 200px;
+        background:blue;
+    }
+    #right{
+        height: 200px;
+        background: #ff0000;
+        margin-left:220px;
+        margin-top:-200px;
+    }
+    
+    
+    </style>
+</head>
+<body>
+    <div id="left"></div>
+    <div id="right"></div>
+</body>
+</html>
+
+<!-- 
+第二种方法：把右边的div浮动或者绝对定位，当他脱离文档流的时候，在把他移到相应的位置
+第三种方法：直接利用盒模型margin-top和margin-left进行移动 -->
