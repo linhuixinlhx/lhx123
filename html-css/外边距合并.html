@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    #div1{
+        width: 400px;
+        height: 400px;
+        background: #ff0000;
+        /* float: left; */
+        /* position: absolute; */
+        /* position: fixed; */
+        display: flex;
+        /* display: inline-block; */
+        /* overflow: hidden; */
+        /* overflow: auto; */
+        /* overflow: scroll; */
+
+    }
+    #div2{
+        width: 200px;
+        height: 200px;
+        background: #00ff00;
+        margin-top:100px;
+    }
+    #div3{
+        width: 200px;
+        height: 200px;
+        background: #f00ff0;
+        margin-bottom:100px;
+        display:inline-block;
+    }
+    #div4{
+        width: 200px;
+        height: 200px;
+        background:blue;
+        margin-top:50px;
+    }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <div id="div2"></div>
+    </div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+</body>
+</html>
+
+<!-- 解决外边距合并问题：需要出发BFC  block  formatting  contexts (块级格式化上下文)
+                 只要元素满足下面任意一条件即可触发BFC：
+                 body根元素
+                 浮动元素：float 除none以外的值
+                 绝对定位元素：position（absolute，fixed）
+                 display:  inline-block,table-cells,  flex
+                 overflow:除了visible以外的值（hidden ,auto, scroll） -->
