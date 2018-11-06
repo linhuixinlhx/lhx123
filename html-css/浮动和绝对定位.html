@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+    #div1{
+        background: #ff0000;
+        float: left; 
+        /* position: absolute; */
+        opacity:0.5;                    /* 透明度取值在0~1 */
+        filter:alpha(opacity=50);        /*透明度兼容性0~100 */
+    }
+    #div2{
+        background: #00ff00;
+
+    }
+    #div3{
+        width: 50px;
+        border:5px solid #000000;
+        overflow: hidden;
+        
+    }
+    </style>
+</head>
+<body>
+    <div id="div1">1111111</div>
+<div id="div2">22222222222</div>
+<div id="div3">33333333333333333333333333333333333333333333</div>
+</body>
+</html>
+
+<!-- 
+float和absolute的区别：虽然都脱离文档流，但是float浮动后浮上去文本在
+                        之前文本的后面，而absolute绝对定位后后来的文本会覆盖在
+                        之前文本的上面 -->
