@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+    }
+    #left,#right{
+        width: 200px;
+        height: 200px;
+        background: #00ff00;
+    }
+    #center{
+        height: 200px;
+        background: pink;
+        margin-left:220px;
+         margin-right:220px; 
+    }
+    #left{
+        float: left;
+    }
+    #right{
+float:right;
+    }
+    </style>
+</head>
+<body>
+    <div id="left"></div>
+    <div id="right"></div>
+    <div id="center"></div>
+</body>
+</html>
+
+<!-- 
+三列布局中间自适应两侧固定：
+                        把左右两边分别向左向右浮动，他们即脱离文档流中间部分就会上去
+                        然后在调整一下距离即可 ，但是需要注意的是他们三个的顺序
+                        先是左再是右再是中-->

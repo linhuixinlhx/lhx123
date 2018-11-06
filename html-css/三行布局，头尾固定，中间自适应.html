@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+    #header,#footer{
+        width:100%;
+        text-align: center;
+        line-height: 30px;
+        height: 30px;
+        background: blue;
+        position: fixed;
+        opacity: 0.5;
+    }
+    #header{
+        top:0;
+    }
+    #footer{
+        bottom:0;
+    }
+    #content{
+        background:pink;
+        position: absolute;
+        top:30px;
+        bottom:30px; 
+        /* margin-top:30px;
+        margin-bottom:30px; */
+        left:0;
+        right:0;
+        overflow:scroll;
+    }
+    
+    
+    </style>
+</head>
+<body>
+    <div id="header">头部</div>
+    <div id="content">
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaa<br>
+
+    </div>
+    <div id="footer">尾部</div>
+</body>
+</html>
+<!-- 
+三行布局头尾固定中间自适应：
+                        头尾用fixed定位，top：0； bottom：0；
+                        然后会发生脱离文档流，然后把中间设成绝对定位调整位置
+                        如top：30px; bottom:30px;  
+                        left:0;  right:0; 是为了把内容撑开 -->
