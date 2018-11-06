@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+    }
+    #left{
+        width: 300px;
+        height: 400px;
+        background: #00ff00;
+    }
+    #right{
+        height: 400px;
+        background: pink;
+        position: relative;
+        left:320px;
+        top:-400px;
+    }
+    </style>
+</head>
+<body>
+    <div id="left"></div>
+    <div id="right"></div>
+</body>
+</html>
+
+
+<!-- 第一种方法：把右边的div相对定位并且不给他固定的宽度，把他移到相应的位置即可 -->
