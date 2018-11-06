@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+    .list{
+        border:1px solid #f00;
+        /* position: absolute; */
+        /* float: left; */
+        /* height:30px; */
+    }
+    li{
+        list-style: none;
+        float:left;
+    }
+      .list::after{
+        content:'';
+        display: block;
+        clear:both;
+    }  
+    </style>
+</head>
+<body>
+   <ul class="list">
+       <li>001</li>
+       <li>002</li>
+       <li>003</li>
+       <li>004</li>
+   </ul>
+</body>
+</html>
+
+<!-- 
+元素塌陷问题解决办法：
+                    1.给父元素设置一个高
+                    2.浮动
+                    3.绝对定位
+                    4.在父元素后面加一个空元素，然后让他变成块级元素后，清除浮动
+                 -->
